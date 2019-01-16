@@ -20,10 +20,9 @@ void* decrementingThreadFunction(){
 
 
 int main(){
-    // TODO: declare incrementingThread and decrementingThread (hint: google pthread_create)
-    
-    
-    
+
+    pthread_p incrementingThread; //ID returner by pthread_create()
+    pthread_p decrementingThread; 
     
     pthread_create(&incrementingThread, NULL, incrementingThreadFunction, NULL);
     pthread_create(&decrementingThread, NULL, decrementingThreadFunction, NULL);
