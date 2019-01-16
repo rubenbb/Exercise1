@@ -21,8 +21,8 @@ void* decrementingThreadFunction(){
 
 int main(){
 
-    pthread_p incrementingThread; //ID returner by pthread_create()
-    pthread_p decrementingThread; 
+    pthread_t incrementingThread; //ID returner by pthread_create()
+    pthread_t decrementingThread; 
     
     pthread_create(&incrementingThread, NULL, incrementingThreadFunction, NULL);
     pthread_create(&decrementingThread, NULL, decrementingThreadFunction, NULL);
